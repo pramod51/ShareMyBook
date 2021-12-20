@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/libraryFragment"
+        android:title="My Library"
+        android:icon="@drawable/ic_library"/>
+
+    <item
+        android:id="@+id/readingFragment"
+        android:title="Reading Room"
+android:icon="@drawable/ic_reading"
+        />
+    <item
+        android:id="@+id/bookStoreFragment"
+        android:title="Book Store"
+       android:icon="@drawable/ic_store"
+        />
+    <item
+        android:id="@+id/accountsFragment"
+        android:title="Accounts"
+        android:icon="@drawable/ic_account"
+        />
+
+</menu>

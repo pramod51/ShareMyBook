@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "974013550812",
+    "firebase_url": "https://bookr-4ea6f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bookr-4ea6f",
+    "storage_bucket": "bookr-4ea6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974013550812:android:b026b27a8d380466b46419",
+        "android_client_info": {
+          "package_name": "com.share.bookR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974013550812-0n5kim8kjkp2cldr9gbvrqt56p81frh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.share.bookR",
+            "certificate_hash": "d3e114c3b355fae319a4cef77c55a891ab918e7a"
+          }
+        },
+        {
+          "client_id": "974013550812-pd07pkddalerghd286hqgle8o74ivort.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.share.bookR",
+            "certificate_hash": "42aeb6a2ce9d9f7db8c5e9c6c2340589368b9f68"
+          }
+        },
+        {
+          "client_id": "974013550812-lom7m5rk1l5epfqfjg1vtb2h60fglenq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_RbR1HpUazaO4k42JViOtVV3HdzxVtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974013550812-lom7m5rk1l5epfqfjg1vtb2h60fglenq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

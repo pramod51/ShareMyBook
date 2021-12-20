@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OrderDetailsFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arriving Monday"
+                    android:layout_centerVertical="true"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#080C29"/>
+                <ImageView
+                    android:id="@+id/book_image"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/book"
+                    android:padding="4dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:alpha="0.4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"/>
+            <include layout="@layout/order_details_layout"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:alpha="0.4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipped with Shiprocket"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="22sp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#080C29"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tracking Id:"
+                    android:padding="10dp"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="xxxxxxxxxxxxxx"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:alpha="0.4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/okay"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="Okay"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

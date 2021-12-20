@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.NotificationFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:id="@+id/push_noti_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push Notification"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_below="@+id/push_noti_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to enable notification"
+                android:textSize="12dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/push_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:id="@+id/enable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable All"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_below="@+id/enable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to receive All Notification"
+                android:textSize="12dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"/>
+            <Switch
+                android:id="@+id/enable_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:id="@+id/order_and_purches_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders and Purchase"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_below="@+id/order_and_purches_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive update related to your order status, \nSubscription, Goals, and more"
+                android:textSize="12dp"
+
+                style="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"/>
+            <Switch
+                android:id="@+id/order_and_purches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            app:cornerRadius="4dp"
+            android:text="Save"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

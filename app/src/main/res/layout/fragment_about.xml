@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/terms_and_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:drawableEnd="@drawable/right"
+            android:gravity="center_vertical"
+            android:text="Terms And Service"
+            android:padding="8dp"
+            android:drawableRight="@drawable/right" />
+        <TextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:drawableEnd="@drawable/right"
+            android:gravity="center_vertical"
+            android:text="Privacy Policy"
+            android:padding="8dp"
+            android:drawableRight="@drawable/right" />
+        <TextView
+            android:id="@+id/sharing_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:drawableEnd="@drawable/right"
+            android:gravity="center_vertical"
+            android:text="Sharing Policy"
+            android:padding="8dp"
+            android:drawableRight="@drawable/right" />
+        <TextView
+            android:id="@+id/cancellation_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:drawableEnd="@drawable/right"
+            android:gravity="center_vertical"
+            android:text="Cancellation Policy"
+            android:padding="8dp"
+            android:drawableRight="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="4dp"
+            android:alpha="0.3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold|italic"
+            android:gravity="center_vertical"
+            android:text="FAQ"
+            android:padding="8dp" />
+        <TextView
+            android:id="@+id/send_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:drawableEnd="@drawable/right"
+            android:gravity="center_vertical"
+            android:text="Send Feedback"
+            android:padding="8dp"
+            android:drawableRight="@drawable/right" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="4dp"
+            android:alpha="0.3"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#120739"
+            android:textStyle="italic|bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="Contact Us"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="In Case of any queries or issue write to us at bookrppw@gmail.com"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#120739"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="BookR"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#120739"
+            android:background="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical" />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/libraryFragment">
+
+    <fragment
+        android:id="@+id/accountsFragment"
+        android:name="com.share.bookR.Fragments.AccountsFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_accounts" >
+        <action
+            android:id="@+id/action_accountsFragment_to_yourOrderFragment"
+            app:destination="@id/yourOrderFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_manageSubscriptionFragment"
+            app:destination="@id/manageSubscriptionFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_yourRatingFragment2"
+            app:destination="@id/yourRatingFragment2" />
+        <action
+            android:id="@+id/action_accountsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookStoreFragment"
+        android:name="com.share.bookR.Fragments.BookStoreFragment"
+        android:label="Book Store"
+        tools:layout="@layout/fragment_book_store" >
+        <action
+            android:id="@+id/action_bookStoreFragment_to_bookDetailsFragment"
+            app:destination="@id/bookDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.share.bookR.Fragments.LibraryFragment"
+        android:label="My Library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_addBookFragment"
+            app:destination="@id/addBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readingFragment"
+        android:name="com.share.bookR.Fragments.ReadingFragment"
+        android:label="Reading"
+        tools:layout="@layout/fragment_reading" >
+        <action
+            android:id="@+id/action_readingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.share.bookR.Fragments.AddBookFragment"
+        android:label="fragment_add_book"
+        tools:layout="@layout/fragment_add_book" >
+        <action
+            app:popUpTo="@id/libraryFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_addBookFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="com.share.bookR.Fragments.AddCardFragment"
+        android:label="Add Card"
+        tools:layout="@layout/fragment_add_card" />
+    <fragment
+        android:id="@+id/manageSubscriptionFragment"
+        android:name="com.share.bookR.Fragments.ManageSubscriptionFragment"
+        android:label="Mange Subscription"
+        tools:layout="@layout/fragment_manage_subscription" >
+        <action
+            android:id="@+id/action_manageSubscriptionFragment_to_upgradeSubscriptionFragment"
+            app:destination="@id/upgradeSubscriptionFragment" />
+        <action
+            android:id="@+id/action_manageSubscriptionFragment_to_cancelledSubscriptionFragment2"
+            app:destination="@id/cancelledSubscriptionFragment2" />
+        <action
+            android:id="@+id/action_manageSubscriptionFragment_to_razorpayActivity"
+            app:destination="@id/razorpayActivity" />
+        <action
+            android:id="@+id/action_manageSubscriptionFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.share.bookR.Fragments.NotificationFragment"
+        android:label="Notification Preferences"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/yourOrderFragment"
+        android:name="com.share.bookR.Fragments.YourOrderFragment"
+        android:label="Your Orders"
+        tools:layout="@layout/fragment_your_order" >
+        <action
+            android:id="@+id/action_yourOrderFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.share.bookR.Fragments.AddressesFragment"
+        android:label="Addresses" >
+        <action
+            android:id="@+id/action_addressesFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_addressesFragment_to_trackOrderFragment"
+            app:destination="@id/trackOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.share.bookR.Fragments.AddAddressFragment"
+        android:label="Add Address" >
+        <action
+            android:id="@+id/action_addAddressFragment_to_addressesFragment"
+            app:popUpTo="@id/addAddressFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/addressesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="com.share.bookR.Fragments.BookDetailsFragment"
+        android:label="Book Details"
+        tools:layout="@layout/fragment_book_details" >
+        <action
+            android:id="@+id/action_bookDetailsFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+        <action
+            android:id="@+id/action_bookDetailsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_bookDetailsFragment_to_manageSubscriptionFragment"
+            app:destination="@id/manageSubscriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackOrderFragment"
+        android:name="com.share.bookR.Fragments.TrackOrderFragment"
+        android:label="Track Order" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.share.bookR.Fragments.EditProfileFragment"
+        android:label="Profile" >
+    </fragment>
+    <fragment
+        android:id="@+id/yourRatingFragment2"
+        android:name="com.share.bookR.Fragments.YourRatingFragment"
+        android:label="Your Ratings"
+        tools:layout="@layout/fragment_your_rating" >
+    </fragment>
+    <fragment
+        android:id="@+id/upgradeSubscriptionFragment"
+        android:name="com.share.bookR.Fragments.UpgradeSubscriptionFragment"
+        android:label="Upgrade Subscription" >
+        <action
+            android:id="@+id/action_upgradeSubscriptionFragment_to_accountsFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/accountsFragment"
+            app:destination="@id/accountsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.share.bookR.Fragments.OrderDetailsFragment"
+        android:label="Order Details"
+        tools:layout="@layout/fragment_order_details" />
+    <fragment
+        android:id="@+id/cancelledSubscriptionFragment2"
+        android:name="com.share.bookR.Fragments.CancelledSubscriptionFragment"
+        android:label="fragment_cancelled_subscription"
+        tools:layout="@layout/fragment_cancelled_subscription" >
+        <action
+            android:id="@+id/action_cancelledSubscriptionFragment2_to_accountsFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/accountsFragment"
+            app:destination="@id/accountsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.share.bookR.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/razorpayActivity"
+        android:name="com.share.bookR.Activity.RazorpayActivity"
+        android:label="RazorpayActivity" />
+    <fragment
+        android:id="@+id/sendFeedbackFragment"
+        android:name="com.share.bookR.Fragments.SendFeedbackFragment"
+        android:label="Send Feedback"
+        tools:layout="@layout/fragment_send_feedback" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.share.bookR.Fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_cancellationPoliceyFragment"
+            app:destination="@id/cancellationPoliceyFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_sharingPolicyFragment"
+            app:destination="@id/sharingPolicyFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_termsOfServiceFragment"
+            app:destination="@id/termsOfServiceFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_sendFeedbackFragment"
+            app:destination="@id/sendFeedbackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cancellationPoliceyFragment"
+        android:name="com.share.bookR.Fragments.CancellationPoliceyFragment"
+        android:label="Cancellation Policy"
+        tools:layout="@layout/fragment_cancellation_policey" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.share.bookR.Fragments.PrivacyPolicyFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/sharingPolicyFragment"
+        android:name="com.share.bookR.Fragments.SharingPolicyFragment"
+        android:label="Sharing Policy"
+        tools:layout="@layout/fragment_sharing_policy" />
+    <fragment
+        android:id="@+id/termsOfServiceFragment"
+        android:name="com.share.bookR.Fragments.TermsOfServiceFragment"
+        android:label="Terms of Services"
+        tools:layout="@layout/fragment_terms_of_service" />
+</navigation>

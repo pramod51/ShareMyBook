@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BookR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="see_all"><u>See all</u></string>
+
+
+    <string name="next"><u>Next</u></string>
+    <string name="skip">Skip</string>
+    <string name="start">Get Started</string>
+
+    <string name="slide_1_title">P2P Book Sharing</string>
+    <string name="slide_1_desc">Read Book Share Book</string>
+
+    <string name="slide_2_title"></string>
+    <string name="slide_2_desc">Share your book, Get money reimbursed for purchase.</string>
+
+    <string name="slide3_desc">Get book delivered at door step, while being incharge of your privacy</string>
+
+    <string name="slide4_title">One Subscription is all you need!</string>
+    <string name="slide4_desc">Read thousand of book in a year without purchasing the book.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyCoGZjr05HCw6_6VMnjzgj3ev1M24XN-tM</string>
+    <string name="cancel_subscription"><u>Cancel Subscription</u></string>
+    <string name="click_here"><u>Click here</u></string>
+    <string name="skip_underline"><u>Skip</u></string>
+    <string name="title_activity_razorpay">RazorpayActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <string name="auth_header">Authorization:Basic cnpwX3Rlc3RfN2c1Z0dwSWg2UjVodTE6OHRQdk8xb1M0MUhBU2I0V2hPR2ZRQWs3</string>
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="sharing_policy"><u>Sharing Policy</u></string>
+
+
+    <string name="cancellation_policy">You can cancel your BookR subscription at any time, and you will continue to have access to the BookR service through the end of your billing period. To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial membership periods or unread books. To cancel, go to the "Manage Subscriptions" page and follow the instructions for cancellation. If you cancel your membership, your account will automatically close at the end of your current billing period. To see when your account will close, click "Billing details" on the "Account" page.</string>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:src="@drawable/user"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pramod Chaurasiya"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-10dp"
+            android:rating="4.5"
+            android:layout_marginLeft="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="16dp"
+            android:text="This is a helpfull book .Everyone Should  read this book and I have hjh j jf  fsm fkj fffwe fiof fe jehjf karke kya batau bhai review me chalo."
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

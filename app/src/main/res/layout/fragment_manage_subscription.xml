@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ManageSubscriptionFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Plans"
+                android:padding="20dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textStyle="italic|bold"
+                android:textColor="#06102C"/>
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="Subscribe to one of our reading planes now!"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"/>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/beginner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="#5F87F4"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beginner"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#010310"/>
+                        <ImageView
+                            android:id="@+id/beginner_active"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="10dp"
+                            android:visibility="invisible"
+                            app:tint="@color/lime_green"
+                            android:src="@drawable/active_subscription"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 Book in a month, 1 book at a time!"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        style="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹250/month"
+                        android:layout_marginTop="8dp"
+                        android:padding="10dp"
+                        android:background="@drawable/basic_membership_back"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/reader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:background="?selectableItemBackground"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="#5F87F4"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reader"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#010310"/>
+                        <ImageView
+                            android:id="@+id/reader_active"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="10dp"
+                            android:visibility="invisible"
+                            app:tint="@color/lime_green"
+                            android:src="@drawable/active_subscription"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8 Book in a month, 2 book at a time!"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹450/month"
+                        android:padding="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/standard_membership_back"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/book_worm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="#5F87F4"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Book worm"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#010310"/>
+                        <ImageView
+                            android:id="@+id/book_worm_active"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="10dp"
+                            android:visibility="invisible"
+                            app:tint="@color/lime_green"
+                            android:src="@drawable/active_subscription"
+                            android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15 Book in a month, 4 book at a time!"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        style="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹650/month"
+                        android:padding="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/premium_membership_back"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/cancel_subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel_subscription"
+                android:textColor="@color/blue"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Upgrade"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
